@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>RIWAAZ</title>
+
+ 
+</head>
+ 
+<body background="RIWAAZ PHOTOS/bg.jpg">
+ <style>
+     *
+
+{
+    margin:0px;
+    padding:0px;
+    
+}
+nav {
+    width: 100%;
+    height:60px;
+    background-color: white;
+    position: absolute;
+}
+ 
+nav ul{
+    float:left;
+ 
+}
+ 
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    z-index: 5;
+}
+ 
+nav ul li a {
+    float: center;
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#222;
+    font-size: 24px;
+    padding: 10px 100px;
+    text-decoration: none;
+}
+ 
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 0px 0px 4px 4px;
+    
+}
+ 
+nav ul li:hover ul {
+    display: block;
+    float: center;
+       
+}
+ 
+ 
+nav ul li ul li {
+    width:360px; 
+    border-radius: 0px;
+}
+nav ul li ul li a:hover {
+    background-color: #f3f3f3;
+    padding: 5px;
+    
+}
+.login{
+    padding-left: 5px;
+}
+.cart{
+    padding-left: 6px;
+}
+.box {
+    border-radius: 50px;
+    height:25px;
+    width:370px;
+    background-color: white;
+    border:2px solid black;
+    float:left;
+    position: relative;
+}
+.table{
+    
+    position: relative;
+ 
+}
+.container{
+    text-align: center;
+    background-color: white;
+    padding:20px;
+    text-align: center;
+}
+.logo{
+    width:3%;
+    height:auto;
+    padding-right:8px;
+ 
+
+}
+.addtocart{
+    width:80px;
+    height:30px;
+    /*padding:10px 18px;*/
+    padding-top:5px;
+    margin-right:8px;
+    background-color: goldenrod;
+}
+.cartpage {
+    margin: auto;
+   
+ 
+}
+ 
+div .tablecart{
+    width:70%;
+    border-collapse: collapse;
+    margin: auto;
+    border: 3px solid goldenrod;
+    background-color:white;
+    
+    
+}
+ 
+table .cartinfo{
+    display: flex;
+    flex-wrap: wrap;
+ 
+  
+}
+td div img{
+    width:100px;
+    height:auto;
+    
+ 
+}
+    
+ 
+ 
+th  {
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background:goldenrod;
+    font-weight: normal;
+ 
+}
+div tr td{
+    padding: 5px 5px;
+    
+}
+select{
+    width: 50px;
+    margin-left: 5px;
+}
+ 
+div a{
+    text-decoration: underline;
+    color: #222;
+}
+ 
+
+ 
+.btn{
+    
+    background-color: goldenrod;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+ 
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+ 
+}
+
+ </style>
+<table border ="0" width="100%" height="60" bgcolor="white" cellspacing="5">
+<tr>
+    <td> <a href="Riwaaz.htm"> <img src="RIWAAZ PHOTOS/new logo.jpg" width="140" height="60" align="center" ></a></td>
+    <td align="right"><input class="box" type="text" placeholder="search for products" maxlength="60" size="60"></td>
+    <td><a href="login.htm"> 
+        <img src="RIWAAZ PHOTOS/login.png" width="30" height="30" align="right" class="login" > </a>
+     <a href="cart.htm"><img src="RIWAAZ PHOTOS/cart.png" width="30" height="30" align="right" class="cart"> </a>   
+     <a href="wishlist.htm"><img src="RIWAAZ PHOTOS/heart.png" width="30" height="25" align="right"></a>  
+        
+        
+       </td>
+    
+</tr>
+</table>
+
+<table>
+<nav>
+    <ul>
+        <li><a href="#">Womenswear</a>
+            <ul>
+                 <li><a href="cropskirts.htm">Croptops-skirt</a></li>
+                 <li><a href="lehenga.htm">Lehengas</a></li>
+                 <li><a href="saree.htm">Saree</a></li>
+           </ul>
+        </li>
+
+        <li><a href="#">Menswear</a>
+             <ul>
+                <li><a href="tux.htm">Suits</a></li>
+                <li><a href="sherwani.htm">Sherwani</a></li>
+                <li><a href="kp.htm">Kurta Pajamas</a></li>
+             </ul>
+        </li>
+     
+        <li><a href="#">Accessories</a>
+              <ul>
+                  <li><a href="bags.htm">Bags</a></li>
+                  <li><a href="masks.htm">Masks</a></li>
+             </ul>
+        </li>
+        <li><a href="rent.htm">Rent</a></li>
+    </ul>
+</nav>
+<br><br>
+</table>
+<div class="cart page">
+    <table class="tablecart"><div class="container" bgcolor="white">
+        <img src="RIWAAZ PHOTOS/heart.png" class="logo"><font size="10"  face="Gill Sans" color="goldenrod">WISHLIST</font>
+    <tr>
+        <th>Products</th>
+        <th>Availability</th>
+        <th align="center" class="center">Price</th>
+        <th>Add to cart</th>
+    </tr>`
+    <tr>
+        <td>
+            <div class="cartinfo">
+                <img src="RIWAAZ PHOTOS/crop3.jpg">
+            
+            <div>
+               <h3> Fossil Grey Organza</h3>
+               <h4><a href ="Cart2.html"> Remove</a></h4>
+            </div> </div>
+         </td>
+         <td>In stock</td>
+       
+        <TD>INR 799,000</TD>
+        <td><button type="button" class="addtocart" >Add to cart</button></td>
+    </tr>
+    <tr>
+        <td>
+            <div class="cartinfo">
+                <img src="RIWAAZ PHOTOS/sherwani1.jpg">
+            
+            <div>
+               <h3>Ivory Sherwani with Aqua Blue Resham</h3>
+               <h4><a href ="Cart2.html"> Remove</a></H4>
+            </div> </div>
+         </td>
+         <td>In stock</td>
+        
+        <TD>INR 340,000</TD>
+        <td><button type="button" class="addtocart" >Add to cart</button></td>
+    </tr>
+</table>
+
+</html>
+
+
